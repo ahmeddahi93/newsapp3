@@ -8,7 +8,7 @@ import {NewsService} from '../news.service';
 })
 export class EgyptnewsComponent implements OnInit {
 
-  news:any;
+  news:any=[];
   constructor(public _newsService:NewsService) { 
     this._newsService.getEgyptNews().subscribe((data) => {
       this.news=data.articles;
