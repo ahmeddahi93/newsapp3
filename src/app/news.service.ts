@@ -11,12 +11,12 @@ export class NewsService {
    getEgyptNews() :Observable<any>
    {
 
-     return this._httpclient.get("http://newsapi.org/v2/top-headlines?country=eg&apiKey=f8a8168a910e4818a4e0bc74fa5bfeed");
+     return this._httpclient.get("https://newsapi.org/v2/top-headlines?country=eg&apiKey=f8a8168a910e4818a4e0bc74fa5bfeed");
    }
 
    getUsNews() :Observable<any>
    {
-    return this._httpclient.get("http://newsapi.org/v2/top-headlines?country=us&apiKey=f8a8168a910e4818a4e0bc74fa5bfeed");
+    return this._httpclient.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=f8a8168a910e4818a4e0bc74fa5bfeed");
 
    }
 }
